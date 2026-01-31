@@ -1,0 +1,33 @@
+{
+    "name": "autonbsp",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": "Mikhail Panichev <denis.invader@gmail.com>",
+    "repository": "github:denisinvader/autonbsp",
+    "bugs": {
+        "url": "https://github.com/denisinvader/autonbsp/issues"
+    },
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/**/*"
+    ],
+    "exports": {
+        ".": "./dist/index.js",
+        "./presets/*": "./dist/presets/*.js"
+    },
+    "scripts": {
+        "build": "rm -rf dist && tsc -b && vite build",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "prepublishOnly": "tsc -b && vitest run && rm -rf dist && vite build"
+    },
+    "devDependencies": {
+        "@types/node": "^25.1.0",
+        "prettier": "^3.8.1",
+        "typescript": "^5.9.3",
+        "vite": "^7.3.1",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^4.0.18"
+    }
+}
