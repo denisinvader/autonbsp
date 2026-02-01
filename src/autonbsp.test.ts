@@ -93,7 +93,7 @@ describe('autoNBSP', () => {
             afterDigits: true,
         } satisfies AutoNBSPConfig;
 
-        expect(autoNBSP('000 1 test string\n\twithout a config')).toEqual('000 1 test string\n\twithout a config');
+        expect(autoNBSP('000 1 test string\n\twithout a config', {})).toEqual('000 1 test string\n\twithout a config');
         expect(autoNBSP('string without replacements 2.0', config)).toEqual('string without replacements 2.0');
     });
 });
