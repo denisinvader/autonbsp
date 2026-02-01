@@ -8,8 +8,8 @@ const NBSP_LITERAL_BY_MODE: Record<AutoNBSPMode, string> = {
 /**
  * Replaces runs of whitespace with non-breaking spaces according to configurable rules.
  */
-export const autoNBSP = function autoNBSP(text: string, config?: AutoNBSPConfig): string {
-    const { mode = 'utf', betweenDigits = false, afterDigits = false, prepositions } = config || {};
+export const autoNBSP = function autoNBSP(text: string, config: AutoNBSPConfig): string {
+    const { mode = 'utf', betweenDigits = false, afterDigits = false, prepositions } = config;
     const nbsp = NBSP_LITERAL_BY_MODE[mode];
 
     let result = text;

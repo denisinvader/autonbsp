@@ -42,5 +42,5 @@ export interface AutoNBSPConfig {
      *
      * Matching is case-insensitive and respects word boundaries.
      */
-    prepositions?: string | string[];
+    prepositions?: string | string[] | readonly string[];
 }
