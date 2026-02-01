@@ -18,7 +18,6 @@ npm install @dinvader/autonbsp
 yarn add @dinvader/autonbsp
 ```
 
-
 ## Usage
 
 Basic example:
@@ -28,14 +27,11 @@ import { autoNBSP } from '@dinvader/autonbsp';
 
 const inputText = 'An example string with 6 tokens.';
 
-const result = autoNBSP(
-    inputText,
-    {
-        mode: 'html',
-        afterDigits: true,
-        prepositions: ['an', 'with'],
-    }
-);
+const result = autoNBSP(inputText, {
+    mode: 'html',
+    afterDigits: true,
+    prepositions: ['an', 'with'],
+});
 
 console.log(result);
 // -> "An&nbsp;example string with&nbsp;6&nbsp;tokens.";
@@ -74,13 +70,13 @@ Default value is `'utf'`.
 Replace runs of whitespace that occur between two adjacent digits.
 
 Examples:
+
 - `"123 456"` → `"123\u00A0456"`
 - `"1\t  2"` → `"1\u00A02"`
 
 `false` by default.
 
 ### `afterDigits?: boolean | 'before-letter'`
-
 
 Replace runs of whitespace that occur immediately after a digit.
 
