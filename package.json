@@ -17,7 +17,6 @@
         "./presets/*": "./dist/presets/*.js"
     },
     "scripts": {
-        "tsc": "tsc",
         "build": "rm -rf dist && tsc -b --force",
         "test": "tsc -p tsconfig.test.json && node --import tsx --test **/*.test.*",
         "prepack": "npm run test && npm run build"
