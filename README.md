@@ -39,7 +39,7 @@ console.log(result);
 
 ### Presets
 
-Two config presets available for Russian and English languages. You can extend them for your needs.
+Two config presets are available for Russian and English languages. You can extend them for your needs.
 
 ```ts
 import { autoNBSP } from '@dinvader/autonbsp';
