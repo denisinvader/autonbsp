@@ -1,6 +1,6 @@
 import type { AutoNBSPConfig } from '../types';
 
-const preset: AutoNBSPConfig = {
+const preset = {
     betweenDigits: true,
     afterDigits: true,
     prepositions: [
@@ -29,6 +29,6 @@ const preset: AutoNBSPConfig = {
         'у',
         'через',
     ],
-};
+} as const;
 
-export default preset;
+export default preset satisfies AutoNBSPConfig;
