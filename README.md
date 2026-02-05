@@ -37,7 +37,9 @@ console.log(result);
 // -> "An&nbsp;example string with&nbsp;6&nbsp;tokens.";
 ```
 
-There are two config presets available for Russian and English languages. You can extend them for your needs.
+### Presets
+
+Two config presets available for Russian and English languages. You can extend them for your needs.
 
 ```ts
 import { autoNBSP } from '@dinvader/autonbsp';
