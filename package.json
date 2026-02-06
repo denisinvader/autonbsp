@@ -12,6 +12,7 @@
     "files": [
         "dist/**/*"
     ],
+    "types": "dist/index.d.ts",
     "exports": {
         ".": "./dist/index.js",
         "./presets/*": "./dist/presets/*.js"
